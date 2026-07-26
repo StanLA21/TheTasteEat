@@ -1,0 +1,14 @@
+var e=(e,t)=>()=>(t||(e((t={exports:{}}).exports,t),e=null),t.exports);(function(){let e=document.createElement(`link`).relList;if(e&&e.supports&&e.supports(`modulepreload`))return;for(let e of document.querySelectorAll(`link[rel="modulepreload"]`))n(e);new MutationObserver(e=>{for(let t of e)if(t.type===`childList`)for(let e of t.addedNodes)e.tagName===`LINK`&&e.rel===`modulepreload`&&n(e)}).observe(document,{childList:!0,subtree:!0});function t(e){let t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),e.crossOrigin===`use-credentials`?t.credentials=`include`:e.crossOrigin===`anonymous`?t.credentials=`omit`:t.credentials=`same-origin`,t}function n(e){if(e.ep)return;e.ep=!0;let n=t(e);fetch(e.href,n)}})();var t=e((()=>{var e=document.querySelector(`.burger-menu`),t=document.querySelector(`.menu`),n=document.body;e&&t&&(e.addEventListener(`click`,function(r){n.classList.toggle(`lock`),e.classList.toggle(`_active`),t.classList.toggle(`_active`)}),t.querySelectorAll(`.menu__link`).forEach(n=>{n.addEventListener(`click`,()=>{document.body.classList.remove(`lock`),e.classList.remove(`_active`),t.classList.remove(`_active`)})}))})),n=e((()=>{function e(){let e=document.querySelector(`.js-tel-link`);e&&(window.innerWidth<768?e.innerHTML=`
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+    </svg>
+        `:e.textContent=`Call - 123 456 789`)}e(),window.addEventListener(`resize`,e)})),r=e((()=>{function e(){let e=document.querySelector(`.js-reserv-link`);e&&(window.innerWidth<768?e.innerHTML=`
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+    <line x1="16" y1="2" x2="16" y2="6"></line>
+    <line x1="8" y1="2" x2="8" y2="6"></line>
+    <line x1="3" y1="10" x2="21" y2="10"></line>
+    <circle cx="16" cy="16" r="3"></circle>
+    <polyline points="16 14 16 16 17 17"></polyline>
+    </svg>
+        `:e.textContent=`Reservation`)}e(),window.addEventListener(`resize`,e)}));e((()=>{t(),n(),r(),new Swiper(`.testimonial__slider`,{slidesPerView:`auto`,loop:!0,slidesPerView:1,spaceBetween:30,speed:600,pagination:{el:`.swiper-pagination`,clickable:!0},navigation:{nextEl:`.swiper-button-next`,prevEl:`.swiper-button-prev`},breakpoints:{768:{slidesPerView:2,spaceBetween:30},1150:{slidesPerView:2,spaceBetween:50}}})}))();
